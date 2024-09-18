@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter your task here" />
+            <button id="newTask" class="add-btn">Add Task</button>
+        </div>
+
+        <div class="task-progress">
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+            <div class="task-status">
+                <span id="taskCount">Total Tasks: 0</span>
+                <span id="completedCount">Completed Tasks: 0</span>
+            </div>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+
+        <div id="celebration" class="celebration hidden">
+            <h2>Well Done! Keep it Up!</h2>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

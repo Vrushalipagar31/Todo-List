@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --background:#003026;
+    --secondaryBackground:#42d0a1;
+    --text:#fff;
+    --purple:#9b82ff;
+    --teal:#24feee;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    background: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--text);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: var(--text);
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#taskInput {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#taskInput ::placeholder
+{
+    font-size: large;
+}
+
+.add-btn {
+    padding: 7px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.add-btn:hover {
+    background-color: white;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.task-progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+    width: 0;
+    height: 10px;
+    background-color: #28a745;
+    transition: width 0.3s;
+}
+
+.task-status {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed p {
+    text-decoration: line-through;
+}
+
+.icons img {
+    width: 20px;
+    cursor: pointer;
+}
+
+#celebration {
+    text-align: center;
+    margin-top: 20px;
+}
+#celebration h2
+{
+    color: var(--text);
+}
+
+.celebration.hidden {
+    display: none;
+}
